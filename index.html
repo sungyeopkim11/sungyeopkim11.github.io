@@ -221,9 +221,10 @@
 									<h2>작품 경매 및 판매 사이트</h2>
 									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
 											class="btn btn-outline-secondary"
-											href="https://github.com/HyunJ1017/OdagiriJoe">Github</a>&nbsp;<a
+											href="https://github.com/HyunJ1017/OdagiriJoe"
+											id="detailsBtn">Details</a>&nbsp;<a
 											class="btn btn-outline-secondary" target="_blank"
-											href="https://www.notion.so/135d7342940280f99f49f5f8ebd21e36">Notion</a>&nbsp;<a
+											href="https://www.notion.so/135d7342940280f99f49f5f8ebd21e36" >Notion</a>&nbsp;<a
 											class="btn btn-outline-secondary" target="_blank"
 											href="https://www.wellytravel.com/">Link</a>
 									</div>
@@ -328,6 +329,146 @@
 
 		</div>
 	</section>
+
+	<!-- 모달 -->
+	<div id="detailsModal" class="modal" style="display: block;">
+		<div class="modal-content">
+			<span class="close"> X </span>
+			<h2 style="color: #5e7c71; text-align: center; font-family: sans-serif;">
+				화사 :: 愛 :: 화공 
+			</h2>
+			<img src="/images/mainPage.png" alt="mainPage" id="thumbnails">
+			<span class="info-container">
+				<i class="fa-solid fa-bars"></i>
+				<h6>Introduce</h6>
+				<p>작품을 경매에 올리고 판매하는 플랫폼</p>
+			</span>
+
+			<span class="info-container">
+				<i class="fa-solid fa-user"></i>
+				<h6>HeadCount</h6>
+				<p>5명</p>
+			</span>
+
+			<span class="info-container">
+				<i class="fa-regular fa-calender"></i>
+				<h6>Period</h6>
+				<p class="date">2024.11.05 - 2024.12.05</p>
+			</span>
+
+			<span class="info-container">
+				<i class="fa-solid fa-link"></i>
+				<h6>Links</h6>
+				<p>
+					<i class="fa-brands fa-github"></i>
+					<a href="https://github.com/HyunJ1017/OdagiriJoe"></a>
+				</p>
+			</span>
+
+			<div class="goal-modal">
+				<h5>📌 개발 목표</h5>
+				<p>
+					이 플랫폼은 예술가와 창의적인 작품을 세상에 알리고, 
+					예술 애호가들이 다양한 작품을 감상할 수 있는 기회를 제공하는 것을 목표로 합니다. 
+					예술가들은 자신의 작품을 등록하고, 작품에 대한 정당한 가치를 인정받으며 
+					더 많은 이들과 작품을 공유할 수 있습니다. 
+					반면, 사용자들은 다양한 예술 작품을 감상하고, 
+					실시간 경매에 참여하여 자신이 좋아하는 작품을 손에 넣는 특별한 경험을 할 수 있습니다.
+				</p>
+			</div>
+
+			<div class="stack-modal">
+				<h5>🛠 기술 스택</h5>
+				<ul>
+					<li>
+						JAVA, HTML5, CSS3, JavaScript
+					</li>
+					<li>
+						Spring Boot, Spring Framework, Mybatis
+					</li>
+				</ul>
+			</div>
+
+			<div class="content-modal">
+				<h5>🖥 개발 내용</h5>
+				<ul>
+					<li>판매 작품 조회</li>
+					<p>판매 작품 페이지를 조회 작품 상세조회를 할 수 있으며
+						구매가능 작품과 판매완료 작품 각각 따로 페이지네이션과 정렬방식을
+						구현하였습니다.
+					</p>
+
+					<li>판매 작품 상세조회</li>
+					<p>
+						상세조회 페이지에서는 좋아요와 신고 및 구매가 가능하며 각각 해당 모달창이
+						나오게 구현하였으며 판매 완료 작품은 구매하기 버튼을 비활성화 해놓았습니다.
+					</p>
+
+					<li>작가 조회</li>
+					<p>
+						신진작가, 이달의 작가, 전체 작가를 조회하며 조회와 페이지네이션 
+						모두 비동기로 구현하였습니다.
+					</p>
+
+					<li>작가 상세조회</li>
+					<p>
+						작가의 프로필을 상세조회 할 수 있으며 작가를 팔로우 할 수 있고
+						해당 작가의 작품을 조회 가능하며 정렬 기능을 구현하였습니다.
+					</p>
+
+					<li>대쉬보드</li>
+					<p>
+						방문자 수, 거래 현황, 작품 현황을 조회할 수 있습니다.
+					</p>
+				</ul>
+			</div>
+			<div class="experience-modal">
+				<h5>💡성장 경험</h5>
+				<p>
+					이번 프로젝트는 이전 세미 프로젝트에서의 경험을 바탕으로 시작부터 
+					체계적인 접근을 시도했습니다. 주제 선정 단계에서부터 팀원들과 활발히 소통하며 
+					디자인과 설계를 수월하게 진행할 수 있었습니다. 
+					팀장님과 팀원 모두 각자의 역할을 충실히 수행했으며, 
+					매일 늦은 시간까지 함께 노력한 결과, 각 기능을 차질 없이 완성할 수 있었습니다. 
+					특히, 초반 설계를 계획대로 마무리하면서 
+					대시보드와 챗봇 같은 추가 기능까지 구현할 수 있었던 점은 팀워크의 성과라고 생각합니다. 
+					이번 프로젝트를 통해 커뮤니케이션의 중요성을 다시 한 번 깨닫게 되었으며, 
+					성공적인 프로젝트는 무엇보다도 팀원 간의 신뢰와 협업에 달려 
+					있다는 것을 깊이 느낄 수 있었습니다.
+				</p>
+			</div>
+
+			<div class="screen-modal">
+				<h5>👀 서비스 화면</h5>
+				<div class="image-group">
+					<div>
+						판매 작품 조회
+						<img src="/images/작품조회.png" alt="판매 작품 조회" id="writer-photo">
+					</div>
+
+					<div>
+						판매 작품 상세조회
+						<img src="/images/상세조회.png" alt="작품 상세 조회" id="writer-photo">
+					</div>
+
+					<div>
+						작가 조회
+						<img src="/images/작가조회.png" alt="작가 조회" id="writer-photo">
+					</div>
+
+					<div>
+						작가 상세조회
+						<img src="/images/작가 상세조회.png" alt="작가 상세조회" id="writer-photo"> 
+					</div>
+
+					<div>
+						대쉬보드
+						<img src="/images/대쉬보드.png" alt="대쉬보드" id="writer-photo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<footer class="ftco-footer ftco-section">
