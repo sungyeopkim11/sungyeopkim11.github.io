@@ -53,6 +53,11 @@ img {
     align-items: baseline;
 }
 
+#detailsModal i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
 #detailsModal h2 {
     font-size: 2em;
     font-weight: bold;
