@@ -51,7 +51,7 @@ document.querySelectorAll(".image-group img").forEach(img => {
 
         // 모달 닫기
         modal.addEventListener("click", function() {
-            modal.remove(); // 모달 삭제제
+            modal.remove(); // 모달 삭제
         });
 
         // 모달에 이미지 추가
