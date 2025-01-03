@@ -52,3 +52,31 @@ img {
     display: flex;
     align-items: baseline;
 }
+
+#detailsModal h2 {
+    font-size: 2em;
+    font-weight: bold;
+    caret-color: rgb(55, 53, 47);
+    margin-bottom: 50px;
+}
+
+#detailsModal h6 {
+    color: black;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+.modal-content p {
+    margin-left: 40px;
+    color: black;
+}
+
+#detailsModal p {
+    font-size: 16px;
+    color: black;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
