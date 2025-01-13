@@ -68,19 +68,19 @@ const closeBtn = document.getElementsByClassName("close")[0];
 // 버튼 클릭 시 모달 열기
 btn.onclick = function(event) {
     event.preventDefault(); // 링크 클릭 시 페이지 이동 방지
-    modal.style.display = "block";
+    modal1.style.display = "block";
 }
 
 // 닫기 버튼 클릭 시 모달 닫기
 closeBtn.onclick = function() {
-    modal.style.display = "none";
+    modal1.style.display = "none";
 }
 
 // 모달 외부 클릭 시 닫기
 document.addEventListener("click", function(event) {
     // 첫 번째 모달 처리
-    if(event.target === modal) {
-        modal.style.display = "none";
+    if(event.target === modal1) {
+        modal1.style.display = "none";
         document.body.style.overflow = "auto";
     }
 });
@@ -91,17 +91,17 @@ document.querySelectorAll(".image-group img").forEach(img => {
     img.addEventListener("click", function() {
 
         // 모달 생성
-        const modal = document.createElement("div");
-        modal.style.position = "fixed";
-        modal.style.top = "O";
-        modal.style.left = "O";
-        modal.style.width = "100%";
-        modal.style.height = "100%";
-        modal.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-        modal.style.display = "flex";
-        modal.style.justifyContent = "center";
-        modal.style.alignItems = "center";
-        modal.style.zIndex = "1000";
+        const modal1 = document.createElement("div");
+        modal1.style.position = "fixed";
+        modal1.style.top = "O";
+        modal1.style.left = "O";
+        modal1.style.width = "100%";
+        modal1.style.height = "100%";
+        modal1.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        modal1.style.display = "flex";
+        modal1.style.justifyContent = "center";
+        modal1.style.alignItems = "center";
+        modal1.style.zIndex = "1000";
 
         // 큰 이미지 생성
         const img = document.createElement("img");
@@ -112,12 +112,12 @@ document.querySelectorAll(".image-group img").forEach(img => {
         img.style.borderRadius = "10px";
 
         // 모달 닫기
-        modal.addEventListener("click", function() {
-            modal.remove(); // 모달 삭제
+        modal1.addEventListener("click", function() {
+            modal1.remove(); // 모달 삭제
         });
 
         // 모달에 이미지 추가
-        modal.appendChild(img);
-        document.body.appendChild(modal); // 모달 추가
+        modal1.appendChild(img);
+        document.body.appendChild(modal1); // 모달 추가
     });
 });
