@@ -160,3 +160,12 @@ p {
     font-size: 16px;
     color: black;
 }
+
+.close2 {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
