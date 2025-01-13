@@ -62,7 +62,7 @@ document.querySelectorAll(".image-group img").forEach(img => {
 
 // 세미미 모달 열기 및 닫기 처리
 const modal1 = document.getElementById("detailsModal1");
-const btn = document.getElementById("detailsBtn");
+const btn = document.getElementById("detailsBtn1");
 const closeBtn = document.getElementsByClassName("close")[0];
 
 // 버튼 클릭 시 모달 열기
