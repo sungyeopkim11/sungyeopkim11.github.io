@@ -1,5 +1,6 @@
 // 파이널 모달 열기 및 닫기 처리
 const modal = document.getElementById("detailsModal");
+const modal2 = document.getElementById("detailsModal2");
 const btn = document.getElementById("detailsBtn");
 const closeBtn = document.getElementsByClassName("close")[0];
 
@@ -7,11 +8,13 @@ const closeBtn = document.getElementsByClassName("close")[0];
 btn.onclick = function(event) {
     event.preventDefault(); // 링크 클릭 시 페이지 이동 방지
     modal.style.display = "block";
+    modal2.style.display = "block";
 }
 
 // 닫기 버튼 클릭 시 모달 닫기
 closeBtn.onclick = function() {
     modal.style.display = "none";
+    modal2.style.display = "none";
 }
 
 // 모달 외부 클릭 시 닫기
@@ -20,33 +23,13 @@ document.addEventListener("click", function(event) {
     if(event.target === modal) {
         modal.style.display = "none";
         document.body.style.overflow = "auto";
-    }
-});
-
-// 파이널 모달 열기 및 닫기 처리
-const modal2 = document.getElementById("detailsModal2");
-const btn2 = document.getElementById("detailsBtn");
-const closeBtn2 = document.getElementsByClassName("close")[0];
-
-// 버튼 클릭 시 모달 열기
-btn2.onclick = function(event) {
-    event.preventDefault(); // 링크 클릭 시 페이지 이동 방지
-    modal2.style.display = "block";
-}
-
-// 닫기 버튼 클릭 시 모달 닫기
-closeBtn2.onclick = function() {
-    modal2.style.display = "none";
-}
-
-// 모달 외부 클릭 시 닫기
-document.addEventListener("click", function(event) {
-    // 첫 번째 모달 처리
-    if(event.target === modal2) {
+    } else {
         modal2.style.display = "none";
         document.body.style.overflow = "auto";
     }
 });
+
+
 
 // JavaScript로 동적 요소 생성
 // 모든 이미지에 클릭 이벤트 추가

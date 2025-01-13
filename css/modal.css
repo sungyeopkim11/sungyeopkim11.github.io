@@ -128,3 +128,26 @@ p {
 
 
 
+#detailsModal2 i {
+    font-size: 15px;
+    margin-right: 10px;
+    color: black;
+}
+
+#detailsModal2 h2 {
+    font-size: 2em;
+    font-weight: bold;
+    caret-color: rgb(55, 53, 47);
+    margin-bottom: 50px;
+}
+
+#detailsModal2 h6 {
+    color: black;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+#detailsModal2 p {
+    font-size: 16px;
+    color: black;
+}
