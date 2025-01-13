@@ -23,10 +23,15 @@ document.addEventListener("click", function(event) {
     if(event.target === modal) {
         modal.style.display = "none";
         document.body.style.overflow = "auto";
-    } else {
+    } 
+});
+
+document.addEventListener("click", function(event) {
+    // 두두 번째 모달 처리
+    if(event.target === modal2) {
         modal2.style.display = "none";
         document.body.style.overflow = "auto";
-    }
+    } 
 });
 
 
