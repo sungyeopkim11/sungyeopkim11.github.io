@@ -4,6 +4,7 @@ const modal2 = document.getElementById("detailsModal2");
 const btn = document.getElementById("detailsBtn");
 const btn2 = document.getElementById("detailsBtn2");
 const closeBtn = document.getElementsByClassName("close")[0];
+const closeBtn2 = document.getElementsByClassName("close2")[0];
 
 // 버튼 클릭 시 모달 열기
 btn.onclick = function(event) {
@@ -19,6 +20,9 @@ btn2.onclick = function(event) {
 // 닫기 버튼 클릭 시 모달 닫기
 closeBtn.onclick = function() {
     modal.style.display = "none";
+}
+
+closeBtn2.onclick = function() {
     modal2.style.display = "none";
 }
 
