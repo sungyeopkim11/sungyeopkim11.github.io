@@ -2,12 +2,17 @@
 const modal = document.getElementById("detailsModal");
 const modal2 = document.getElementById("detailsModal2");
 const btn = document.getElementById("detailsBtn");
+const btn2 = document.getElementById("detailsBtn2");
 const closeBtn = document.getElementsByClassName("close")[0];
 
 // 버튼 클릭 시 모달 열기
 btn.onclick = function(event) {
     event.preventDefault(); // 링크 클릭 시 페이지 이동 방지
     modal.style.display = "block";
+}
+
+btn2.onclick = function(event) {
+    event.preventDefault(); // 링크 클릭 시 페이지 이동 방지
     modal2.style.display = "block";
 }
 
@@ -27,7 +32,7 @@ document.addEventListener("click", function(event) {
 });
 
 document.addEventListener("click", function(event) {
-    // 두두 번째 모달 처리
+    // 두 번째 모달 처리
     if(event.target === modal2) {
         modal2.style.display = "none";
         document.body.style.overflow = "auto";
